@@ -1,0 +1,5 @@
+# Inbox
+
+Drop files here for the AI Employee to process.
+
+The File System Watcher monitors this folder and creates action files in `Needs_Action/`.
