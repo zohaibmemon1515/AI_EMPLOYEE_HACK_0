@@ -1,0 +1,600 @@
+[
+  {
+    "timestamp": "2026-03-04T01:34:47.087538",
+    "action_type": "email_sent",
+    "email_id": "19caf315a4d8270c",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_0ae1c3b3.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:34:56.203371",
+    "action_type": "email_sent",
+    "email_id": "19caf315a4d8270c",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_0ae1c3b3.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:35:05.301831",
+    "action_type": "email_sent",
+    "email_id": "19caf315a4d8270c",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_0ae1c3b3.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:35:24.896233",
+    "action_type": "email_sent",
+    "email_id": "19caf315a4d8270c",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_0ae1c3b3.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:35:34.026845",
+    "action_type": "email_sent",
+    "email_id": "19caf315a4d8270c",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_0ae1c3b3.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:35:43.156618",
+    "action_type": "email_sent",
+    "email_id": "19caf315a4d8270c",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_0ae1c3b3.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:35:52.270641",
+    "action_type": "email_sent",
+    "email_id": "19caf315a4d8270c",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_0ae1c3b3.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:36:01.419350",
+    "action_type": "email_sent",
+    "email_id": "19caf315a4d8270c",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_0ae1c3b3.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:36:10.517138",
+    "action_type": "email_sent",
+    "email_id": "19caf315a4d8270c",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_0ae1c3b3.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:36:19.630650",
+    "action_type": "email_sent",
+    "email_id": "19caf315a4d8270c",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_0ae1c3b3.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:36:28.745233",
+    "action_type": "email_sent",
+    "email_id": "19caf315a4d8270c",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_0ae1c3b3.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:36:37.858529",
+    "action_type": "email_sent",
+    "email_id": "19caf315a4d8270c",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_0ae1c3b3.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:36:47.018883",
+    "action_type": "email_sent",
+    "email_id": "19caf315a4d8270c",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_0ae1c3b3.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:36:56.108111",
+    "action_type": "email_sent",
+    "email_id": "19caf315a4d8270c",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_0ae1c3b3.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:37:05.192011",
+    "action_type": "email_sent",
+    "email_id": "19caf315a4d8270c",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_0ae1c3b3.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:37:14.336553",
+    "action_type": "email_sent",
+    "email_id": "19caf315a4d8270c",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_0ae1c3b3.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:37:23.466419",
+    "action_type": "email_sent",
+    "email_id": "19caf315a4d8270c",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_0ae1c3b3.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:37:38.063819",
+    "action_type": "email_sent",
+    "email_id": "19caf315a4d8270c",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_0ae1c3b3.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:37:48.484202",
+    "action_type": "email_sent",
+    "email_id": "19caf315a4d8270c",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_0ae1c3b3.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:37:56.526001",
+    "action_type": "email_sent",
+    "email_id": "19caf315a4d8270c",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_0ae1c3b3.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:38:04.373299",
+    "action_type": "email_sent",
+    "email_id": "19caf315a4d8270c",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_0ae1c3b3.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:38:11.329871",
+    "action_type": "email_sent",
+    "email_id": "19caf315a4d8270c",
+    "actor": "orchestrator",
+    "result": "success",
+    "details": {
+      "to": "support@sparktraffic.com",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_0ae1c3b3.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:40:54.397403",
+    "action_type": "email_sent",
+    "email_id": "19cb51472f82fbf2",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_2d2c5b29.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:41:02.385618",
+    "action_type": "email_sent",
+    "email_id": "19cb51472f82fbf2",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_2d2c5b29.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:41:10.386987",
+    "action_type": "email_sent",
+    "email_id": "19cb51472f82fbf2",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_2d2c5b29.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:48:16.647309",
+    "action_type": "email_sent",
+    "email_id": "19cb51472f82fbf2",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_2d2c5b29.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:48:25.927072",
+    "action_type": "email_sent",
+    "email_id": "19cb51472f82fbf2",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_2d2c5b29.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:48:41.907780",
+    "action_type": "email_sent",
+    "email_id": "19cb51472f82fbf2",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_2d2c5b29.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:48:51.505530",
+    "action_type": "email_sent",
+    "email_id": "19cb51472f82fbf2",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_2d2c5b29.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:49:00.337300",
+    "action_type": "email_sent",
+    "email_id": "19cb51472f82fbf2",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_2d2c5b29.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:49:09.435717",
+    "action_type": "email_sent",
+    "email_id": "19cb51472f82fbf2",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_2d2c5b29.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:49:19.201683",
+    "action_type": "email_sent",
+    "email_id": "19cb51472f82fbf2",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_2d2c5b29.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:49:28.784597",
+    "action_type": "email_sent",
+    "email_id": "19cb51472f82fbf2",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_2d2c5b29.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:49:37.571844",
+    "action_type": "email_sent",
+    "email_id": "19cb51472f82fbf2",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_2d2c5b29.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:49:45.993189",
+    "action_type": "email_sent",
+    "email_id": "19cb51472f82fbf2",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_2d2c5b29.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:49:55.128124",
+    "action_type": "email_sent",
+    "email_id": "19cb51472f82fbf2",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_2d2c5b29.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:50:04.476485",
+    "action_type": "email_sent",
+    "email_id": "19cb51472f82fbf2",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_2d2c5b29.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:50:13.746697",
+    "action_type": "email_sent",
+    "email_id": "19cb51472f82fbf2",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_2d2c5b29.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:50:22.808746",
+    "action_type": "email_sent",
+    "email_id": "19cb51472f82fbf2",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_2d2c5b29.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:50:31.376367",
+    "action_type": "email_sent",
+    "email_id": "19cb51472f82fbf2",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_2d2c5b29.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:50:40.554461",
+    "action_type": "email_sent",
+    "email_id": "19cb51472f82fbf2",
+    "actor": "orchestrator",
+    "result": "failed",
+    "details": {
+      "to": "",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_2d2c5b29.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T01:50:54.733892",
+    "action_type": "email_sent",
+    "email_id": "19cb51472f82fbf2",
+    "actor": "orchestrator",
+    "result": "success",
+    "details": {
+      "to": "support@tradeology.com",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_2d2c5b29.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T02:10:27.673381",
+    "action_type": "email_sent",
+    "email_id": "19cb5824618c6e2e",
+    "actor": "orchestrator",
+    "result": "success",
+    "details": {
+      "to": "zohaibmemon2525@gmail.com",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_636b923e.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T23:33:36.427063",
+    "action_type": "email_sent",
+    "email_id": "19caf2afec919a10",
+    "actor": "orchestrator",
+    "result": "success",
+    "details": {
+      "to": "no-reply@exness.com",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_fc82e669.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T23:38:17.781621",
+    "action_type": "email_sent",
+    "email_id": "19caf1678fbd9be1",
+    "actor": "orchestrator",
+    "result": "success",
+    "details": {
+      "to": "teamtwilio@team.twilio.com",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_2e138dbc.md",
+      "sent_message_id": null
+    }
+  },
+  {
+    "timestamp": "2026-03-04T23:49:32.121594",
+    "action_type": "email_sent",
+    "email_id": "19cacc675639c0b3",
+    "actor": "orchestrator",
+    "result": "success",
+    "details": {
+      "to": "hello@gamma.app",
+      "subject": "",
+      "draft_file": "EMAIL_REPLY_6d5bd338.md",
+      "sent_message_id": null
+    }
+  }
+]

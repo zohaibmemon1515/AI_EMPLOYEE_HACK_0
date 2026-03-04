@@ -6,6 +6,7 @@
       {
         "id": "36f00befb1437bee",
         "type": "tabs",
+        "dimension": 70.58823529411765,
         "children": [
           {
             "id": "38620d4576e6fb2b",
@@ -13,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Welcome.md",
+                "file": "Plans/PLAN_EMAIL_0ae1c3b3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Welcome"
+              "title": "PLAN_EMAIL_0ae1c3b3"
             }
           }
         ]
@@ -26,6 +27,7 @@
       {
         "id": "2a17ea890f196cb0",
         "type": "tabs",
+        "dimension": 29.411764705882355,
         "children": [
           {
             "id": "4107ce85e15f6b48",
@@ -199,8 +201,21 @@
       "bases:Create new base": false
     }
   },
-  "active": "38620d4576e6fb2b",
+  "active": "fc5118801ec14170",
   "lastOpenFiles": [
+    "Pending_Approval/EMAIL_REPLY_40b18f70.md",
+    "Plans/PLAN_EMAIL_40b18f70.md",
+    "Needs_Action/EMAIL_40b18f70_20260305_000307.md",
+    "Business_Goals.md",
+    "Company_Handbook.md",
+    "Dashboard.md",
+    "Pending_Approval/EMAIL_REPLY_80d24b7a.md",
+    "Plans/PLAN_EMAIL_80d24b7a.md",
+    "Needs_Action/EMAIL_80d24b7a_20260304_234947.md",
+    "Done/EMAIL_REPLY_6d5bd338.md",
+    "Approved/EMAIL_REPLY_6d5bd338.md",
+    "Approved/EMAIL_REPLY_2d2c5b29.md",
+    "Welcome.md",
     "Done/FILE_add_20260226_235424.md",
     "In_Progress/filesystem/add.txt",
     "Needs_Action/FILE_add_20260226_235424.md",
@@ -215,10 +230,6 @@
     "Pending_Approval",
     "Done",
     "Inbox",
-    "Plans/Plan_Template.md",
-    "Business_Goals.md",
-    "Company_Handbook.md",
-    "Dashboard.md",
-    "Welcome.md"
+    "Plans/Plan_Template.md"
   ]
 }

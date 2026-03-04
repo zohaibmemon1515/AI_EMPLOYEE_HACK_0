@@ -1,0 +1,24 @@
+{
+  "name": "ai-employee-email-mcp",
+  "version": "1.0.0",
+  "description": "Email MCP Server for AI Employee - Silver Tier",
+  "type": "module",
+  "main": "email_mcp_server.js",
+  "scripts": {
+    "start": "node email_mcp_server.js",
+    "dev": "node --watch email_mcp_server.js"
+  },
+  "keywords": [
+    "mcp",
+    "gmail",
+    "email",
+    "ai-employee"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "dotenv": "^16.4.5",
+    "googleapis": "^140.0.0"
+  }
+}

@@ -1,0 +1,76 @@
+---
+type: email_plan
+email_message_id: 19cb857050993995
+classification: support
+priority: medium
+generated: 2026-03-04T23:31:32.418037
+---
+
+# Email Action Plan
+
+## Summary
+
+| Field | Value |
+|-------|-------|
+| **From** | ACCA <no-reply@support.accaglobal.com> |
+| **Subject** | Register for ACCA now before the application process temporarily closes |
+| **Classification** | support |
+| **Priority** | medium |
+
+---
+
+## Content
+
+We’re updating our systems – here’s what this means for you 
+
+Hi Fahad 
+
+We’re delighted you’re exploring ACCA – wherever you are on your career journey, we’re here to support your next step in accountancy and finance. 
+
+We want to make your journey with ACCA as simple and stress-free as possible, so you can focus on achieving your goals. This April, we’ll be updating some of our online services to provide a smoother and more convenient way to manage your account and learning. To support this transition, we need to pause applications from 31 March 2026. 
+
+Apply by 31 March 2026 
+
+Secure your registration with ACCA by submitting your application in advance of 31 March 2026, before applications are temporarily paused. You'll be able to apply again when our new and improved online services launch on 29 April 2026. 
+
+Start your application 
+
+Already started your application? 
+
+If you’ve already started your application, please complete and submit all required documents in advance of 31 March 2026 to keep your application on track. If you don’t finish by then, you can apply again from 29 April 2026, when our new online services launch. 
+
+Resume your application 
+
+Discover more about ACCA Start your ACCA journey today and take the next step towards a global career in accountancy and finance. 
+
+Learn more 
+
+Thank you for your understanding as we carry out these essential updates. We’ll keep you updated with everything you need to know. 
+
+Discover 
+
+Connect with us 
+
+Copyright @ 2026 The Association of Chartered Certified Accountants. All rights reserved. 
+
+Registered office: The Adelphi, 1-11 John Adam Street, London, WC2N 6AU 
+
+You are receiving this message because you have been in contact with ACCA or an affiliate. To no longer receive messages from ACCA, https://t.support.accaglobal.com/webApp/marketingConsent?id=%40MNDm6JSw2o09IkRCMZoX5g%3D%3D #end --> 
+
+----------------------------------------------------------------------------
+To view this message in HTML format, click here:
+ http://t.support.accaglobal.com/r/?id=t254ba371,d2728fa,19be464&utm_source=adobecampaign&utm_medium=email&utm_campaign=attract_dt_update_pp&utm_content=email1_mar26&mid=625714033&rid=14025050&cid=DM1061615&market=PK&region=MESA&utm_date=2026-03-04&campaignlabel=Pre-Prospects%20DT%20Campaign%20Update%202026&p1=%40lBHSLVtt2CcRRfYnobP3kZf9s3Er%2Briqq6onctx2ZYs%3D 
+or paste this link in a Web browser
+----------------------------------------------------------------------------
+
+
+---
+
+## Action Plan
+
+- [ ] Review email content
+- [ ] Review draft reply in Pending_Approval/
+- [ ] Approve and send, or archive
+
+### Approval: Required
+### Follow-up: Yes

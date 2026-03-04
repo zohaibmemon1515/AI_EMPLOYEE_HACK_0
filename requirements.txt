@@ -1,0 +1,16 @@
+# AI Employee - Silver Tier
+# Python Dependencies
+
+# File system watching
+watchdog>=4.0.0
+
+# Gmail API
+google-auth>=2.25.0
+google-auth-oauthlib>=1.2.0
+google-api-python-client>=2.110.0
+
+# Environment variables
+python-dotenv>=1.0.0
+
+# HTTP requests (for MCP client fallback)
+requests>=2.31.0

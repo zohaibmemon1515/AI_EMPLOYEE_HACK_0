@@ -1,0 +1,70 @@
+---
+type: email_plan
+email_message_id: 19cb07c12166cc41
+classification: support
+priority: medium
+generated: 2026-03-04T01:22:41.155144
+---
+
+# Email Action Plan
+
+## Summary
+
+| Field | Value |
+|-------|-------|
+| **From** | The5ers Fund <help@the5ers.com> |
+| **Subject** | Trade Like a Pro: Get Exclusive Market Insights 🔥 |
+| **Classification** | support |
+| **Priority** | medium |
+
+---
+
+## Content
+
+https://hub.the5ers.com/?mc_cid=9aa8d48673&mc_eid=UNIQID
+
+To give you a professional trading edge, we are providing our traders with direct access to institutional market intelligence from TSG Brokers (a CySEC-regulated investment firm).
+
+Through this partnership, you can now subscribe to the TSG Market Newsletter, a professional brief designed to sharpen your execution and help you reach your next milestone.
+
+What’s waiting for you inside:
+* Weekly Market Watch: Get the "Trade of the Week" breakdowns. We strip away the noise to show you exactly where the high-probability setups are hiding.
+* Macroeconomic Update: The "Big Picture" simplified. Master the invisible forces driving the charts so you’re never caught on the wrong side of a trend.
+* Key Events This Week: We identify the high-volatility landmines and opportunities before the opening bell rings.
+* Commodities Analysis: Master Gold, Oil, and more. Specialized insights into the world’s most explosive assets for traders who hunt for volatility.
+
+Get insights used by industry professionals to help you reach your next milestone at The5ers!
+Sign Up for the TSG Newsletter! (https://tsgbrokers.com/?mc_cid=9aa8d48673&mc_eid=UNIQID)
+
+Risk Warning: Trading in CFDs involves a high level of risk. 77.95% of retail investor accounts lose money when trading CFDs with this provider.
+
+To your success,
+
+The5ers Team
+https://www.facebook.com/the5ersproptrading?mc_cid=9aa8d48673&mc_eid=UNIQID
+https://www.instagram.com/the.5ers/?mc_cid=9aa8d48673&mc_eid=UNIQID
+https://twitter.com/the5erstrading?mc_cid=9aa8d48673&mc_eid=UNIQID
+https://the5ers.com/?mc_cid=9aa8d48673&mc_eid=UNIQID
+https://www.linkedin.com/company/the5-ers---trading-group/mycompany/?mc_cid=9aa8d48673&mc_eid=UNIQID
+https://www.youtube.com/@The5ersFundingAndBeyond/?mc_cid=9aa8d48673&mc_eid=UNIQID
+
+You were subscribed to the newsletter from The5ers |
+Funding Traders & Growth Program
+
+contact us:
+via email (https://the5ers.com/contact-us/?mc_cid=9aa8d48673&mc_eid=UNIQID) or via chat (https://the5ers.com/contact-us/?mc_cid=9aa8d48673&mc_eid=UNIQID)
+Tel: (9219) 955 5595
+
+Want to change how you receive these emails?
+You can update your preferences (https://the5ers.us3.list-manage.com/profile?u=1d2ec3a97bf5fe70bec217e23&id=e0afbc3003&e=9d8f809d13&c=9aa8d48673) or unsubscribe (https://the5ers.us3.list-manage.com/unsubscribe?u=1d2ec3a97bf5fe70bec217e23&id=e0afbc3003&t=b&e=9d8f809d13&c=9aa8d48673)
+
+---
+
+## Action Plan
+
+- [ ] Review email content
+- [ ] Review draft reply in Pending_Approval/
+- [ ] Approve and send, or archive
+
+### Approval: Required
+### Follow-up: Yes

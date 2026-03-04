@@ -1,0 +1,126 @@
+---
+type: email_plan
+email_message_id: 19cb2ad401d983ef
+classification: sales
+priority: medium
+generated: 2026-03-04T01:22:41.123896
+---
+
+# Email Action Plan
+
+## Summary
+
+| Field | Value |
+|-------|-------|
+| **From** | Tanmay @ predis.ai <hello@predis.ai> |
+| **Subject** | 🚨Coming Soon: Boost CTR with UGC videos |
+| **Classification** | sales |
+| **Priority** | medium |
+
+---
+
+## Content
+
+[https://pa.predis.ai/d0350495-420a-46b2-97b9-cd424d536d7d.png]
+
+Stronger UGC. Higher CTR.
+Launching Soon.⬆️
+
+Hi,
+
+
+UGC-style creatives are proven to reduce scroll time and increase purchase
+intent.
+
+We’ve been working on upgrading UGC video quality in Predis - and after this
+upgrade, your avatar won't just talk about the product.
+
+
+
+It will naturally showcase it in-hand or while using it, just like real creator
+content.
+
+Preview the upgrade 👇
+
+
+
+
+
+
+
+
+
+
+
+
+
+[https://pa.predis.ai/f77c0724-550f-4482-988a-63b966cb1bce.png]
+https://youtube.com/shorts/BUEu3lHht2k
+
+[https://pa.predis.ai/34f1c027-815f-407b-ace8-9d4ae7771aaf.png]
+https://youtube.com/shorts/LzuurgBmw44
+
+Why this matters:
+
+• Stronger authenticity → feels like real creator content
+• Clear product visibility → no guessing what’s being sold
+• Higher trust → better engagement and conversion potential
+
+This update is built specifically to help brands create UGC videos that is more
+contextually rich.
+
+Soon to be live on Predis.
+Reply "Interested" to this email for early access.
+
+
+
+
+
+
+
+
+
+
+
+Till then, keep creating!
+
+Tanmay,           
+Co-Founder, Predis AI
+
+P.S. If you’ve got a quick win or a pain point, now’s the perfect time to share
+it — we take feedback very seriously here.
+
+Predis AI is an AI ad creatives and social media post generation tool that lets
+you create nearly ready-to-publish, fully editable Ads and social content in
+your brand's voice.
+
+You are receiving this email because you opted into our mailing list or are a
+Predis AI user.
+Too Boring to hear from us? Unsubscribe here
+[https://pv.predis.ai/unsubscribe/email?u=ZJLX37N4JN&c=O5G244X2QR&s=0]
+Want to change your Preferences? Edit Preferences
+[https://pv.predis.ai/unsubscribe/preferences/ZJLX37N4JN]
+
+
+[https://pa.predis.ai/d320fab3-177e-462a-a5cd-852d4e94f2c9.png]
+https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/groups/predisaiofficial
+
+[https://pa.predis.ai/3edc023e-f3f0-467a-8181-6d04a231ab61.jpg]
+https://www.instagram.com/predis.ai/
+
+[https://pa.predis.ai/84e95be6-bf5e-4b51-86fd-4b8fd457e7a3.png]
+https://twitter.com/intent/tweet?url=https://twitter.com/predisai
+
+[https://pa.predis.ai/94a888f8-654b-4dc5-a36c-bc6258a7a726.png]
+https://www.youtube.com/@predisai
+
+---
+
+## Action Plan
+
+- [ ] Review email content
+- [ ] Review draft reply in Pending_Approval/
+- [ ] Approve and send, or archive
+
+### Approval: Required
+### Follow-up: Yes
