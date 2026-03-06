@@ -201,8 +201,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "4107ce85e15f6b48",
+  "active": "38620d4576e6fb2b",
   "lastOpenFiles": [
+    "Pending_Approval/EMAIL_REPLY_d0e60fb2.md",
+    "Plans/PLAN_EMAIL_d0e60fb2.md",
+    "Needs_Action/EMAIL_d0e60fb2_20260307_025850.md",
     "Dashboard.md",
     "Pending_Approval/WHATSAPP_REPLY_57107ea09cc583e8.md",
     "Plans/PLAN_WHATSAPP_57107ea09cc583e8.md",
@@ -226,9 +229,6 @@
     "Approved/WHATSAPP_REPLY_f52da99f6a46bedd.md",
     "Pending_Approval/EMAIL_REPLY_bdb55a93.md",
     "Needs_Action/EMAIL_bdb55a93_20260307_005644.md",
-    "Pending_Approval/EMAIL_REPLY_d78ca511.md",
-    "Needs_Action/EMAIL_db9fd72a_20260307_005644.md",
-    "Needs_Action/EMAIL_ddc1db41_20260307_005644.md",
     "Logs/2026-03-07.json",
     "In_Progress/whatsapp/known_contacts.json",
     "In_Progress/whatsapp/processed_ids.json",
