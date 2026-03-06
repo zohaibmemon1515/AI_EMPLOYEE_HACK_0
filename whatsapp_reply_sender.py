@@ -78,7 +78,7 @@ class WhatsAppReplySender:
                 return False
 
             chat_name = chat_match.group(1).strip()
-            
+
             if draft_match:
                 message = draft_match.group(1).strip().replace('```', '').strip()
             else:
@@ -91,16 +91,28 @@ class WhatsAppReplySender:
             # Move to Done for manual sending
             done_path = self.done_folder / file_path.name
             shutil.move(str(file_path), str(done_path))
-            
+
             logger.info(f"✅ Prepared: {done_path.name}")
             logger.info(f"   Send manually via WhatsApp Web")
-            
+
             self.log_action(file_path.name, "prepared", str(done_path))
+
+            # Update dashboard
+            self._update_dashboard()
+
             return True
 
         except Exception as e:
             logger.error(f"Error: {e}")
             return False
+
+    def _update_dashboard(self):
+        """Update Obsidian Dashboard."""
+        try:
+            from dashboard_updater import update_dashboard
+            update_dashboard(self.vault_path)
+        except Exception as e:
+            logger.debug(f"Dashboard update skipped: {e}")
 
     def log_action(self, filename: str, action: str, result: str):
         log_dir = self.vault_path / "Logs"

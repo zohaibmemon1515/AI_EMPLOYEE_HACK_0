@@ -43,6 +43,13 @@ USE_SMTP = os.getenv("USE_SMTP", "false").lower() == "true"
 BASE_DIR = Path(__file__).parent
 sys.path.insert(0, str(BASE_DIR))
 
+# Import dashboard updater
+try:
+    from dashboard_updater import update_dashboard
+    DASHBOARD_AVAILABLE = True
+except:
+    DASHBOARD_AVAILABLE = False
+
 
 class ApprovedWatcher:
     """Watches Approved folder and sends emails immediately."""
@@ -428,11 +435,10 @@ class ApprovedWatcher:
     def _update_dashboard(self):
         """Update Obsidian Dashboard."""
         try:
-            from dashboard_updater import DashboardUpdater
-            updater = DashboardUpdater(self.vault_path)
-            updater.update_dashboard()
+            from dashboard_updater import update_dashboard
+            update_dashboard(self.vault_path)
         except Exception as e:
-            logger.error(f"Failed to update dashboard: {e}")
+            logger.debug(f"Dashboard update skipped: {e}")
 
     def run(self):
         """Run the approved folder watcher."""
@@ -443,37 +449,42 @@ class ApprovedWatcher:
         print(f"   Check interval: 5 seconds")
         print(f"\n   Move draft files to Approved/ to send automatically")
         print(f"{'='*70}\n")
-        
+
         check_count = 0
-        
+        last_dashboard_update = 0
+
         while True:
             try:
                 check_count += 1
                 timestamp = datetime.now().strftime("%H:%M:%S")
-                
+
+                # Update dashboard every 5 seconds (every loop)
+                if check_count - last_dashboard_update >= 1:
+                    self._update_dashboard()
+                    last_dashboard_update = check_count
+
                 # Get approved files
                 files = self.get_approved_files()
-                
+
                 if files:
                     print(f"\n[{timestamp}] 📬 Found {len(files)} approved file(s)")
-                    
+
                     for filepath in files:
                         success = self.process_approved_file(filepath)
-                        
+
                         if success:
                             print(f"\n[{timestamp}] ✅ Sent: {filepath.name}")
                         else:
                             print(f"\n[{timestamp}] ❌ Failed: {filepath.name}")
-                    
+
                     print()
                 else:
-                    # Show status every 30 seconds
-                    if check_count % 6 == 0:
-                        print(f"[{timestamp}] ✓ Watching Approved/ ...", end="\r")
-                
+                    # Show status
+                    print(f"[{timestamp}] ✓ Dashboard updated | Watching Approved/ ...", end="\r")
+
                 # Wait 5 seconds
                 time.sleep(5)
-                
+
             except KeyboardInterrupt:
                 print(f"\n\n🛑 Stopping Approved Watcher...")
                 break

@@ -83,6 +83,7 @@ class AIEmployee:
         self.whatsapp_watcher = None
         self.whatsapp_reply_sender = None
         self.orchestrator = None
+        self.dashboard_updater = None
         self.running = False
 
     def start(self):
@@ -137,6 +138,17 @@ class AIEmployee:
         )
         print(f"   ✓ Started (PID: {self.orchestrator.pid})")
 
+        # Wait a moment
+        time.sleep(2)
+
+        # Start Real-Time Dashboard Updater
+        print("\n📊 Starting Real-Time Dashboard Updater...")
+        self.dashboard_updater = subprocess.Popen(
+            [sys.executable, "-u", str(self.base_dir / "realtime_dashboard.py"),
+             str(self.vault), "2"],  # Update every 2 seconds
+        )
+        print(f"   ✓ Started (PID: {self.dashboard_updater.pid})")
+
         print("\n" + "=" * 70)
         print("✅ AI Employee is RUNNING!")
         print("=" * 70)
@@ -146,6 +158,7 @@ class AIEmployee:
         print("   • WhatsApp Watcher: Checking every 30 seconds (Playwright)")
         print("   • WhatsApp Reply Sender: Monitoring Approved/ (5 seconds)")
         print("   • Orchestrator: Watching Approved/ folder (every 5 seconds)")
+        print("   • Dashboard Updater: Updating every 2 seconds ⚡")
         print()
         print("📂 Email Flow:")
         print("   1. New emails → Needs_Action/")
@@ -219,8 +232,19 @@ class AIEmployee:
                             [sys.executable, "-u", str(self.base_dir / "orchestrator.py"), str(self.vault)],
                         )
 
+                # Check Dashboard Updater
+                if self.dashboard_updater.poll() is not None:
+                    print(f"\n[{timestamp}] ⚠️  Dashboard Updater stopped")
+                    if self.dashboard_updater.returncode != 0:
+                        print("   Restarting...")
+                        time.sleep(3)
+                        self.dashboard_updater = subprocess.Popen(
+                            [sys.executable, "-u", str(self.base_dir / "realtime_dashboard.py"),
+                             str(self.vault), "2"],
+                        )
+
                 # Show status
-                print(f"[{timestamp}] ✓ Running | Gmail: 60s | WhatsApp: 30s | Reply: 5s | Approved: 5s", end="\r")
+                print(f"[{timestamp}] ✓ Running | Dashboard: 2s | Gmail: 60s | WhatsApp: 30s | Reply: 5s | Approved: 5s", end="\r")
 
                 time.sleep(10)
 
@@ -296,6 +320,15 @@ class AIEmployee:
                 self.orchestrator.wait(timeout=5)
             except:
                 self.orchestrator.kill()
+            print("   ✓ Stopped")
+
+        if self.dashboard_updater:
+            print("   Stopping Dashboard Updater...")
+            self.dashboard_updater.terminate()
+            try:
+                self.dashboard_updater.wait(timeout=5)
+            except:
+                self.dashboard_updater.kill()
             print("   ✓ Stopped")
 
         print("\n" + "=" * 70)

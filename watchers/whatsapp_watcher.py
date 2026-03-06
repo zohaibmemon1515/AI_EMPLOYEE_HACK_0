@@ -659,6 +659,15 @@ status: pending_approval
                             self.create_action_file(msg)
                             self.playwright_client.mark_chat_as_read(msg.chat_name)
                         print(f"   ✓ Processed {len(messages)}")
+
+                        # Update dashboard after processing
+                        try:
+                            base_dir = Path(__file__).parent.parent
+                            sys.path.insert(0, str(base_dir))
+                            from dashboard_updater import update_dashboard
+                            update_dashboard(self.vault_path)
+                        except:
+                            pass
                     else:
                         timestamp = datetime.now().strftime("%H:%M:%S")
                         remaining = self.rate_limiter.get_remaining()
@@ -677,6 +686,16 @@ status: pending_approval
         self._running = False
         self.playwright_client.close()
         self.logger_impl.flush()
+
+        # Update dashboard
+        try:
+            base_dir = Path(__file__).parent.parent
+            sys.path.insert(0, str(base_dir))
+            from dashboard_updater import update_dashboard
+            update_dashboard(self.vault_path)
+        except Exception as e:
+            logger.debug(f"Dashboard update skipped: {e}")
+
         self.logger.info("Stopped")
 
 
