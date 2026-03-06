@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Plans/PLAN_EMAIL_0ae1c3b3.md",
+                "file": "Dashboard.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PLAN_EMAIL_0ae1c3b3"
+              "title": "Dashboard"
             }
           }
         ]
@@ -201,35 +201,43 @@
       "bases:Create new base": false
     }
   },
-  "active": "fc5118801ec14170",
+  "active": "38620d4576e6fb2b",
   "lastOpenFiles": [
-    "Pending_Approval/EMAIL_REPLY_40b18f70.md",
-    "Plans/PLAN_EMAIL_40b18f70.md",
-    "Needs_Action/EMAIL_40b18f70_20260305_000307.md",
-    "Business_Goals.md",
-    "Company_Handbook.md",
-    "Dashboard.md",
-    "Pending_Approval/EMAIL_REPLY_80d24b7a.md",
-    "Plans/PLAN_EMAIL_80d24b7a.md",
-    "Needs_Action/EMAIL_80d24b7a_20260304_234947.md",
-    "Done/EMAIL_REPLY_6d5bd338.md",
-    "Approved/EMAIL_REPLY_6d5bd338.md",
-    "Approved/EMAIL_REPLY_2d2c5b29.md",
-    "Welcome.md",
-    "Done/FILE_add_20260226_235424.md",
-    "In_Progress/filesystem/add.txt",
-    "Needs_Action/FILE_add_20260226_235424.md",
-    "Inbox/add.txt",
-    "Needs_Action/SAMPLE_TASK_Test_System.md",
-    "Done/SAMPLE_TASK_Test_System.md",
-    "In_Progress/filesystem",
-    "Updates",
-    "Accounting",
-    "Briefings",
-    "In_Progress",
-    "Pending_Approval",
-    "Done",
-    "Inbox",
-    "Plans/Plan_Template.md"
+    "Done/WHATSAPP_REPLY_97018034b1c1ee26.md",
+    "Approved/WHATSAPP_REPLY_97018034b1c1ee26.md",
+    "Pending_Approval/WHATSAPP_REPLY_97018034b1c1ee26.md",
+    "Plans/PLAN_WHATSAPP_97018034b1c1ee26.md",
+    "Needs_Action/WHATSAPP_97018034b1c1ee26_20260307_021355.md",
+    "Done/WHATSAPP_REPLY_f52da99f6a46bedd.md",
+    "Approved/WHATSAPP_REPLY_f52da99f6a46bedd.md",
+    "Pending_Approval/EMAIL_REPLY_bdb55a93.md",
+    "Needs_Action/EMAIL_bdb55a93_20260307_005644.md",
+    "Pending_Approval/EMAIL_REPLY_d78ca511.md",
+    "Needs_Action/EMAIL_db9fd72a_20260307_005644.md",
+    "Needs_Action/EMAIL_ddc1db41_20260307_005644.md",
+    "Needs_Action/EMAIL_e556c8b2_20260307_005644.md",
+    "Pending_Approval/EMAIL_REPLY_db9fd72a.md",
+    "Pending_Approval/EMAIL_REPLY_e556c8b2.md",
+    "Needs_Action/EMAIL_ed1e3185_20260307_005644.md",
+    "Pending_Approval/EMAIL_REPLY_ed1e3185.md",
+    "Pending_Approval/EMAIL_REPLY_ddc1db41.md",
+    "Needs_Action/EMAIL_d78ca511_20260307_005644.md",
+    "Plans/PLAN_EMAIL_bdb55a93.md",
+    "Plans/PLAN_EMAIL_e556c8b2.md",
+    "Plans/PLAN_EMAIL_ed1e3185.md",
+    "Plans/PLAN_EMAIL_ddc1db41.md",
+    "Plans/PLAN_EMAIL_db9fd72a.md",
+    "Plans/PLAN_EMAIL_d78ca511.md",
+    "Pending_Approval/WHATSAPP_REPLY_f52da99f6a46bedd.md",
+    "Logs/2026-03-07.json",
+    "In_Progress/whatsapp/known_contacts.json",
+    "In_Progress/whatsapp/processed_ids.json",
+    "In_Progress/whatsapp/archived/test_message_001.json",
+    "In_Progress/whatsapp/archived",
+    "In_Progress/whatsapp/incoming/test_message_001.json",
+    "In_Progress/whatsapp/incoming",
+    "WhatsApp",
+    "Gmail",
+    "In_Progress/whatsapp"
   ]
 }

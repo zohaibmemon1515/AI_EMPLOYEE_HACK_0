@@ -1,0 +1,62 @@
+---
+type: email_plan
+email_message_id: 19cc3fde63b783fa
+classification: general
+priority: low
+generated: 2026-03-07T00:56:44.774437
+---
+
+# Email Action Plan
+
+## Summary
+
+| Field | Value |
+|-------|-------|
+| **From** | GOATFUNDEDTRADER <support@goatfundedtrader.com> |
+| **Subject** | 50% OFF. Because performance is what counts |
+| **Classification** | general |
+| **Priority** | low |
+
+---
+
+## Content
+
+[WOMEN=E2=80=99S DAY SALE IS LIVE](https://www.goatfundedtrader.com/)
+
+[50% Off All Plans](https://www.goatfundedtrader.com/)
+
+[Why Serious Traders Choose GFT](https://www.goatfundedtrader.com/)
+
+[Women's Day Offer](https://www.goatfundedtrader.com/)
+
+[Goat Funded Trader](https://goatfundedtrader.com)
+
+[Telegram](https://t.co/UZSFCI8xel)
+
+[Youtube](https://www.youtube.com/@goatfundedtrader)
+
+[Instagram](https://www.instagram.com/goatfundedtrader_com/profilecard/?igs=
+h=3DdDBnc3ZiazNidWth)
+
+[X](https://x.com/GoatFunded)
+
+[Discord](https://discord.com/invite/goat-funded-trader-1078005350797672539=
+)
+
+No longer want to receive these emails? [Unsubscribe](https://manage.kmail-=
+lists.com/subscriptions/unsubscribe?a=3DWG4mp9&c=3D01KFMR1RQBGEXGN4WXKMPNYK=
+E2&k=3Dec1fddfd7e91307af063b6fcf0917f54&m=3D01KK1VHT09MSS4741FZRAC0CBB&r=3D=
+01KK1ZTZAVACAHD0WFEEJS0KJP).
+WISHES TOWER INTERNATIONAL LIMITED RM 1205, 12/F. BEVERLY HSE 93-107 LOCKHA=
+RT RD WAN CHAI HONG KONG Hong Kong, Hong Kong 00000
+
+---
+
+## Action Plan
+
+- [ ] Review email content
+- [ ] Review draft reply in Pending_Approval/
+- [ ] Approve and send, or archive
+
+### Approval: Not Required
+### Follow-up: No

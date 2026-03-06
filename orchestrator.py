@@ -97,21 +97,30 @@ class ApprovedWatcher:
         return False
 
     def get_approved_files(self) -> list[Path]:
-        """Get all unprocessed files in Approved folder."""
+        """Get all unprocessed EMAIL files in Approved folder (skip WhatsApp)."""
         if not self.approved_folder.exists():
             return []
-        
+
         files = []
         for filepath in self.approved_folder.iterdir():
             if filepath.is_file() and filepath.suffix == ".md":
+                # Skip WhatsApp reply files (handled by whatsapp_reply_sender.py)
+                if filepath.name.startswith("WHATSAPP_REPLY_"):
+                    continue
+
                 if filepath.name not in self.processed_files:
                     files.append(filepath)
-        
+
         return sorted(files, key=lambda f: f.stat().st_mtime)
 
     def read_draft_file(self, filepath: Path) -> dict[str, Any]:
         """Read draft file and extract email details."""
-        content = filepath.read_text(encoding="utf-8")
+        try:
+            content = filepath.read_text(encoding="utf-8")
+        except UnicodeDecodeError as e:
+            logger.error(f"Unicode error reading {filepath.name}: {e}")
+            # Try with latin-1 as fallback
+            content = filepath.read_text(encoding="latin-1")
 
         # Extract frontmatter
         frontmatter = {}

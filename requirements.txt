@@ -14,3 +14,10 @@ python-dotenv>=1.0.0
 
 # HTTP requests (for MCP client fallback)
 requests>=2.31.0
+
+# WhatsApp Web Automation
+playwright>=1.40.0
+
+# AI Draft Reply Generator
+openai>=1.12.0
+google-generativeai>=0.3.2

@@ -9,4 +9,19 @@ wheels/
 # Virtual environments
 .venv
 
+# Credentials and sensitive data
 credentials/
+sessions/
+*.env
+.env
+
+# Obsidian
+.obsidian/
+
+# Logs
+Logs/
+*.log
+
+# MCP server state
+*.pid
+.mcp-*/

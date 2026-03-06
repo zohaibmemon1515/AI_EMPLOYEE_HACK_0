@@ -1,0 +1,10 @@
+{
+  "id": "test_message_001",
+  "chat_name": "Ahmed Khan",
+  "chat_id": "923001234567@c.us",
+  "from_name": "Ahmed Khan",
+  "message": "Hi! I need help with the project deadline. Can we schedule a meeting tomorrow?",
+  "timestamp": "2026-03-06T19:50:00",
+  "is_group": false,
+  "has_media": false
+}

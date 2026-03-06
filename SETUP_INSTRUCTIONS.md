@@ -767,6 +767,45 @@ cat Vault/In_Progress/gmail/known_senders.json | jq '.senders'
 - **OAuth 2.0 Guide**: https://developers.google.com/identity/protocols/oauth2
 - **Google Cloud Console**: https://console.cloud.google.com/
 - **MCP Protocol**: https://modelcontextprotocol.io/
+- **WhatsApp Watcher**: See [WHATSAPP_README.md](WHATSAPP_README.md)
+
+---
+
+## WhatsApp Integration (Bonus)
+
+### Quick Setup
+
+The WhatsApp watcher uses a **file-based approach** - no browser automation required!
+
+### How It Works
+
+1. Create JSON files in `Vault/In_Progress/whatsapp/incoming/`
+2. Watcher detects and processes them (every 30 seconds)
+3. Creates action files in `Vault/Needs_Action/`
+4. Same workflow as Gmail: Plans → Draft → Approval → Send
+
+### Add WhatsApp Message
+
+```json
+{
+  "id": "msg_001",
+  "chat_name": "Ahmed Khan",
+  "chat_id": "923001234567@c.us",
+  "from_name": "Ahmed Khan",
+  "message": "Hi! Can we schedule a meeting?",
+  "timestamp": "2026-03-06T19:50:00",
+  "is_group": false,
+  "has_media": false
+}
+```
+
+### Test Message Included
+
+A test message is already created. Run `python main.py` and wait ~30 seconds.
+
+### Documentation
+
+See [WHATSAPP_README.md](WHATSAPP_README.md) for complete details.
 
 ---
 
