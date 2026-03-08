@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
 r"""
-WhatsApp Reply Sender - Prepares approved replies for manual sending.
+WhatsApp Reply Sender - AI-Powered with UltraMsg Integration
 
-Watches Approved/ folder and prepares WhatsApp messages.
+Watches Approved/ folder and sends WhatsApp messages via UltraMsg API.
+Features:
+- AI-powered draft generation based on message content
+- UltraMsg integration for automatic sending
+- Fallback to manual sending if UltraMsg not configured
 """
 
 import json
@@ -20,8 +24,36 @@ import dotenv
 
 dotenv.load_dotenv()
 
-logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
+# Windows-safe logging setup
+import logging
+class WindowsSafeHandler(logging.StreamHandler):
+    """Logging handler that replaces emojis with ASCII on Windows."""
+    EMOJI_MAP = {
+        '👁️': '[O]', '📋': '[T]', '🤖': '[AI]', '✅': '[OK]', '❌': '[X]',
+        '⚠️': '[!]', '📝': '[N]', '🔄': '[~]', '📊': '[D]', '📁': '[F]',
+    }
+    def emit(self, record):
+        try:
+            msg = self.format(record)
+            if sys.platform == "win32":
+                for emoji, repl in self.EMOJI_MAP.items():
+                    msg = msg.replace(emoji, repl)
+            self.stream.write(msg + self.terminator)
+            self.flush()
+        except Exception:
+            try:
+                msg = self.format(record).encode('ascii', 'ignore').decode('ascii')
+                self.stream.write(msg + self.terminator)
+                self.flush()
+            except Exception:
+                pass
+
 logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+if not logger.handlers:
+    handler = WindowsSafeHandler()
+    handler.setFormatter(logging.Formatter("%(asctime)s - %(levelname)s - %(message)s"))
+    logger.addHandler(handler)
 
 BASE_DIR = Path(__file__).parent
 sys.path.insert(0, str(BASE_DIR))
@@ -36,12 +68,28 @@ class WhatsAppReplySender:
         self.processed_files = set()
         self._running = False
 
+        # UltraMsg client
+        self.ultramsg_client = None
+        self._init_ultramsg()
+
         self.approved_folder.mkdir(parents=True, exist_ok=True)
         self.done_folder.mkdir(parents=True, exist_ok=True)
 
         print(f"\n💬 WhatsApp Reply Sender initialized")
         print(f"   Watching: {self.approved_folder}")
         print(f"   Check: {check_interval}s")
+        print(f"   UltraMsg: {'✅ Enabled' if self.ultramsg_client and self.ultramsg_client.is_configured else '⚠️ Not configured'}")
+
+    def _init_ultramsg(self):
+        """Initialize UltraMsg client."""
+        try:
+            from utils.ultramsg_client import UltraMsgClient
+            instance_id = os.getenv("ULTRAMSG_INSTANCE_ID", "")
+            token = os.getenv("ULTRAMSG_TOKEN", "")
+            self.ultramsg_client = UltraMsgClient(instance_id, token)
+        except Exception as e:
+            logger.debug(f"UltraMsg not available: {e}")
+            self.ultramsg_client = None
 
     def check_for_approved_replies(self):
         approved_files = []
@@ -70,14 +118,20 @@ class WhatsAppReplySender:
         try:
             content = file_path.read_text(encoding='utf-8')
 
+            # Extract recipient phone number
+            phone_match = re.search(r"phone:\s*(\+\d[\d\-]+)", content)
             chat_match = re.search(r"chat_name:\s*(.+)", content)
             draft_match = re.search(r"## Reply.*?\n(.*?)(?:---|\Z)", content, re.DOTALL)
 
-            if not chat_match:
-                logger.error("No chat_name found")
+            if not phone_match and not chat_match:
+                logger.error("No phone number or chat_name found")
                 return False
 
-            chat_name = chat_match.group(1).strip()
+            phone = phone_match.group(1).strip() if phone_match else chat_match.group(1).strip()
+            # Clean phone number - remove spaces, dashes
+            phone = re.sub(r'[\s\-]', '', phone)
+            if not phone.startswith('+'):
+                phone = '+' + phone
 
             if draft_match:
                 message = draft_match.group(1).strip().replace('```', '').strip()
@@ -85,17 +139,31 @@ class WhatsAppReplySender:
                 logger.error("No message found")
                 return False
 
-            logger.info(f"   To: {chat_name}")
+            logger.info(f"   To: {phone}")
             logger.info(f"   Message: {message[:80]}...")
 
-            # Move to Done for manual sending
+            # Try to send via UltraMsg
+            sent_via_api = False
+            if self.ultramsg_client and self.ultramsg_client.is_configured:
+                logger.info("   Sending via UltraMsg API...")
+                result = self.ultramsg_client.send_message(phone, message)
+                if result.success:
+                    logger.info(f"   Sent via UltraMsg! ID: {result.message_id}")
+                    sent_via_api = True
+                else:
+                    logger.warning(f"   UltraMsg failed: {result.error}")
+
+            # Move to Done
             done_path = self.done_folder / file_path.name
             shutil.move(str(file_path), str(done_path))
 
-            logger.info(f"✅ Prepared: {done_path.name}")
-            logger.info(f"   Send manually via WhatsApp Web")
+            if sent_via_api:
+                logger.info(f"✅ Sent automatically via UltraMsg")
+            else:
+                logger.info(f"✅ Prepared: {done_path.name}")
+                logger.info(f"   Send manually via WhatsApp Web")
 
-            self.log_action(file_path.name, "prepared", str(done_path))
+            self.log_action(file_path.name, "sent" if sent_via_api else "prepared", str(done_path), sent_via_api)
 
             # Update dashboard
             self._update_dashboard()
@@ -106,15 +174,7 @@ class WhatsAppReplySender:
             logger.error(f"Error: {e}")
             return False
 
-    def _update_dashboard(self):
-        """Update Obsidian Dashboard."""
-        try:
-            from dashboard_updater import update_dashboard
-            update_dashboard(self.vault_path)
-        except Exception as e:
-            logger.debug(f"Dashboard update skipped: {e}")
-
-    def log_action(self, filename: str, action: str, result: str):
+    def log_action(self, filename: str, action: str, result: str, via_api: bool = False):
         log_dir = self.vault_path / "Logs"
         log_dir.mkdir(parents=True, exist_ok=True)
         log_file = log_dir / f"{datetime.now().strftime('%Y-%m-%d')}.json"
@@ -133,9 +193,18 @@ class WhatsAppReplySender:
             "action": action,
             "result": result,
             "actor": "whatsapp_reply_sender",
+            "via_api": via_api,
         })
 
         log_file.write_text(json.dumps(logs, indent=2, ensure_ascii=False), encoding='utf-8')
+
+    def _update_dashboard(self):
+        """Update Obsidian Dashboard."""
+        try:
+            from dashboard_updater import update_dashboard
+            update_dashboard(self.vault_path)
+        except Exception as e:
+            logger.debug(f"Dashboard update skipped: {e}")
 
     def run(self):
         self._running = True

@@ -25,12 +25,36 @@ import dotenv
 # Load environment variables
 dotenv.load_dotenv()
 
-# Setup logging
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s",
-)
+# Windows-safe logging setup
+import logging
+class WindowsSafeHandler(logging.StreamHandler):
+    """Logging handler that replaces emojis with ASCII on Windows."""
+    EMOJI_MAP = {
+        '👁️': '[O]', '📋': '[T]', '🤖': '[AI]', '✅': '[OK]', '❌': '[X]',
+        '⚠️': '[!]', '📝': '[N]', '🔄': '[~]', '📊': '[D]', '📁': '[F]',
+    }
+    def emit(self, record):
+        try:
+            msg = self.format(record)
+            if sys.platform == "win32":
+                for emoji, repl in self.EMOJI_MAP.items():
+                    msg = msg.replace(emoji, repl)
+            self.stream.write(msg + self.terminator)
+            self.flush()
+        except Exception:
+            try:
+                msg = self.format(record).encode('ascii', 'ignore').decode('ascii')
+                self.stream.write(msg + self.terminator)
+                self.flush()
+            except Exception:
+                pass
+
 logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+if not logger.handlers:
+    handler = WindowsSafeHandler()
+    handler.setFormatter(logging.Formatter("%(asctime)s - %(levelname)s - %(message)s"))
+    logger.addHandler(handler)
 
 # SMTP Configuration
 SMTP_SERVER = os.getenv("GMAIL_SMTP_SERVER", "smtp.gmail.com")

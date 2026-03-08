@@ -14,10 +14,40 @@ Example:
 """
 
 import hashlib
-import logging
 import shutil
 from pathlib import Path
 from typing import Any
+
+# Windows-safe logging setup
+import logging
+class WindowsSafeHandler(logging.StreamHandler):
+    """Logging handler that replaces emojis with ASCII on Windows."""
+    EMOJI_MAP = {
+        '👁️': '[O]', '📋': '[T]', '🤖': '[AI]', '✅': '[OK]', '❌': '[X]',
+        '⚠️': '[!]', '📝': '[N]', '🔄': '[~]', '📊': '[D]', '📁': '[F]',
+    }
+    def emit(self, record):
+        try:
+            msg = self.format(record)
+            if sys.platform == "win32":
+                for emoji, repl in self.EMOJI_MAP.items():
+                    msg = msg.replace(emoji, repl)
+            self.stream.write(msg + self.terminator)
+            self.flush()
+        except Exception:
+            try:
+                msg = self.format(record).encode('ascii', 'ignore').decode('ascii')
+                self.stream.write(msg + self.terminator)
+                self.flush()
+            except Exception:
+                pass
+
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+if not logger.handlers:
+    handler = WindowsSafeHandler()
+    handler.setFormatter(logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s"))
+    logger.addHandler(handler)
 
 from base_watcher import BaseWatcher
 
@@ -249,13 +279,6 @@ def main():
     vault_path = sys.argv[1] if len(sys.argv) > 1 else "../Vault"
     check_interval = int(sys.argv[2]) if len(sys.argv) > 2 else 30
 
-    # Setup logging
-    logging.basicConfig(
-        level=logging.INFO,
-        format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-        force=True,  # Force reconfigure if already configured
-    )
-
     # Create and run watcher
     watcher = FileSystemWatcher(vault_path, check_interval)
 
@@ -265,7 +288,7 @@ def main():
         print("\nWatcher interrupted by user")
         watcher.stop()
     except Exception as e:
-        logging.error(f"Watcher crashed: {e}")
+        logger.error(f"Watcher crashed: {e}")
         raise
 
 
